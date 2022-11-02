@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links HTML</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+           color: red;
+           text-decoration: none;/* aqui esta uma nova tag que retira o sublinhado do link  */
+           font-weight: bold; 
+        }
+        a:visited {
+            /* uma nova pseudo classe, para identiciar visualmente se vc visitiou o link ou não. Como o exemplo mudando a cor definada por você para direfenciar se foi ou não visitado o link*/
+            color: darkred;
+        }
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+        
+        a:active { 
+            /* aqui é para salientar visualmente que você esta clicando no link. Como o exemplo abaixo, no qual link fica amarelo.  */
+            color: yellow;
+        }
+        a::after {
+            /* Aqui esta um exemplo de pseudo-element, no qual visualmente no código é representado com 2 :: 
+            Lembrando que after é depois de algo, e before é antes de algo.*/
+            content: '[link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io/" target="_blank" rel="next">Repositorio GiHub</a></li>
+        <li><a href="https://www.youtube.com/watch?v=vMlrcOVr7po&t=161s&ab_channel=CursoemV%C3%ADdeo" target="_blank" rel="next">Canal do Youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-2-de-5-40-horas/aulas/modulo-2-2/modulos/capitulo-15-aula-04-pseudo-elementos-em-css/" target="_blank" referrerpolicy="next">Site do CursoemVideo</a></li>
+    </ul>
+</body>
+</html>

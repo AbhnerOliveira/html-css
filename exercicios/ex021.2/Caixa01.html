@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelos de Caixa</title>
+    <style>
+        h1 {
+            /* Para alterar uma propriedade de box-level/inline-level, é necessário colocar a tag display: ea repectiva oposta que deseja.
+            ex:
+            display: inline; (no exemplo de uma box-level)
+            
+            display: block (no exemplo de uma inline-level*/
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkgreen;
+            /* a tag a baixo é uma tag, usandao para manipular a margem interna de uma box. */
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+
+            /* a tag a seguir é utilizada para manipular a margem de uma box */
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            /* Para alinhar uma box conforme o viewer port, utiliza-se a tag margin: auto;.  */
+
+            /* a tag a baixo manipula a "lina" entrea a borda e a margem de uma box. */
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: cornflowerblue;
+
+            /* lembrando que sempre tem como simplificar o código com os short hands, como o border e outline. boder: width style color,
+            ex:
+            border: 10px solid darkgreen;.
+            
+            Isso serve também para as outras tag, padding e margin . Sempre seguindo a ordem de comando com respectivos valores.
+            padding: (valor do top) (valor do right) (valor do botton)  (valor do left);
+            ex:
+            padding: 10px 10px 10px 10px;
+            
+            Vale resaltar que os 4 valores forem iguais, você só precisa informar 1 deles que ele colocara o mesmo valor nas 4 medidas, porem se você informar somente 2 valores ele vai sempre colocar os opostos (top/botton)(right/left) como os respectivos valore, mas se quiser ainda facilitar sua vida, e deixar ele centralizado e com valores exatos no centro da tela, basta colocar padding:auto; que ele vai se ajustar no centro da box.  .
+            */
+
+        }
+
+        a {
+            border-width: 10px;
+            border-style: dashed;
+            border-color: black;
+        }
+    </style>
+</head>
+<body>
+    <!-- User agent: representa o seu navegador que esta exibindo seu conteúdo. -->
+    <h1>Exemplos de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona.
+    </p>
+</body>
+</html>

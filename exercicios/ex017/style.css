@@ -1,0 +1,34 @@
+@charset "UTF-8";
+body {
+    font-family: 'work sans';
+    /* Medidas absolutas
+    cm, mm, in, px, pt, pc
+
+    Medidas Relativas
+    em, ex, rem, vw, vh, %
+
+    16px geralmente é  = a 1em
+     */
+     font-size: 16px;
+     font-weight: lighter;
+     /* esse suporta Lighter, normal, bold e bolder
+     
+     Podentambem ser expressadas na forma numérica de 100 - 900
+     
+     Porem nem todas as fontes essas funções.*/
+     text-decoration: underline;
+     /* aqui esta para sublinhar o texto */
+
+     font-style: italic;
+     /* aqui é para deixar em itálico */
+
+     /* porem ha um modo de colocar todas essas declarações dentro de uma uníca declaração, chamada "shorhand"
+     
+     Sendo a ordem:
+     font-style, font-weight, font-size, font-family. segue o exemplo a baixo:*/
+     font: italic, bolder, 3em, 'Work Sans', sans-serif;
+     
+}
+h1, h2 {
+    font-family: 'Times New Roman', Times, serif;
+}

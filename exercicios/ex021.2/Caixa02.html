@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gruping Tag</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: cornflowerblue;
+        }
+        header {
+            background-color: whitesmoke;
+            padding: 10px;
+            margin: 10px;
+
+        }
+
+        nav {
+            background-color: aquamarine;
+            padding: 3px;
+            text-align: center;
+            box-shadow: 1px 1px 1px black;
+            /* nessa shorthand box-shadow, o primeiro número é referente ao horizonte da shadow, o segundo é referente ao vertical, o terceiro espalhamento das sombras e por fim o ultimo elemento é a coloração dessa sombra.
+            Vale resaltar, que esta configuração é baseada na sombra outset, porem se quiser pode ser alterada a forma usando a tag insert.
+            ex:
+            box-shadow: insert e o restante dos valores e a coloração.*/
+        }
+        main {
+            background-color: whitesmoke;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px;
+            /* No mesmo jeito que é utilizando o shorthands na margin, também pode ser colocado 1 valor somente ou 2 valores representando (top/botton) e (left/right) */
+        }
+
+        article {
+            background-color: lightblue;
+            margin: 5px;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            padding: 1px;
+            margin: 0px;
+            text-align: center;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+
+        div#bola {
+            height: 100px;
+            width: 100px;
+            margin: 5px auto;
+            background-color: wheat;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+
+        </section>
+        <section id="notícias">
+            <article>
+                <h2>notícia sobre Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, natus debitis? Aut eveniet beatae, voluptatibus, totam quaerat dolorum itaque tempore minima molestiae nihil maxime ea rerum id distinctio doloribus hic.</p>
+                <aside>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido pelo CursoemVideo</p>
+    </footer>
+    <div id="bola">
+
+    </div>
+</body>
+</html>

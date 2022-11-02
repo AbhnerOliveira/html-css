@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+body {
+  background-image: linear-gradient(to top, #f1dabf, #92817a);
+  text-align: center;
+}
+
+h1 {
+  background-color: #92817a;
+  color: white;
+}
+
+h2 {
+  color: white;
+  border-radius: 10px;
+}

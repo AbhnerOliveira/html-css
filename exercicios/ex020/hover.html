@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Exemplo de hover</title>
+    <style>
+        body {
+            background-color: #7fffd472;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: justify;
+        }
+
+        h1 {
+            text-align: center;
+            background-color:#2200ff90;
+            color: white;
+        }
+        
+        div > p {
+        /* esse seletor faz com que configure o filho do div  */ 
+            display: none;
+        }
+
+        div:hover > p {
+            /* aqui mostra uma pseudo idéa de menu. */
+            display: block;
+            color: white;
+            background-color: red;
+            width: 300px;
+        }
+
+        div:hover {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de hover</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div>Passe o mouse aqui.
+        <p>TEXTO ESCONDIDO...</p>
+    </div>
+    <p>Fim do exemplo</p>
+    
+</body>
+</html>
