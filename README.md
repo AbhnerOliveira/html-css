@@ -1,4 +1,4 @@
 # html-css
  Curso de html e css!
 
- Estou aprendendo a mexer com o githud!
+ Estou aprendendo a mecher com o githud!
