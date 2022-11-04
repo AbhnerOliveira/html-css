@@ -1,4 +1,4 @@
 # html-css
  Curso de html e css!
 
- Estou aprendendo a mexer com o githud!
+ Cursando o Curso em Vídeo com professor Gustavo Guanabara!
