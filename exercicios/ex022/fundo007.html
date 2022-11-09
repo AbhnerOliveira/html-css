@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+    <style>
+        #container {
+            /* hoje vamos aprender mais sobre posição de conteudo em relação a pagina, assim facilitando onde você deseja colocar seu conteudo dentro de uma pagna.
+            Para isso usamos a tag POSITION */
+            position: relative;
+            height: 96vh;
+            padding: 10px;
+            background: purple url('imagens-cap19/wallpaper/target001.png');
+            background-size: 100% 100%;
+        }
+
+        #conteudo {
+            position: absolute;
+            height: 200px;
+            width: 400px;
+            background: yellow url('imagens-cap19/wallpaper/target001.png');
+            background-size: 100% 100%;
+            /* o position sempre vai ter 2 variaveis, uma sempre sendo relative ou seja o que vai ser comparado, (a parte fixa de algo), e o absolute que se posiciona em relação ao relative.
+            exemplo disso será:*/
+            left: 50%;
+            top: 50%;
+            
+            /* Porem isso não ajuda a centralizar o meio da nossa div com relação ao centro da outra imagem de fundo. Pois o alinhamento que ele utiliza por padrão, sempre é o top left como base. Para "ajustar" isso usamos a função Transform : translate.
+            exemplo: */
+            transform: translate(-50%, -50%);
+
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>

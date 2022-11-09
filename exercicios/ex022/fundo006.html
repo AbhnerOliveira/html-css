@@ -4,20 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo tela</title>
     <style>
         body {
-            height: 100vh;
+            /* aqui seria como editariamos todo o background do body, de uma forma explicativa de todas as propriedades que será inserida.
             background-color: black;background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
             background-image: url('imagens-cap19/wallpaper/wallpaper002.jpg');
+            background-attachment: fixed; */
+            
+            /* Porem para deixar mais limpo e pratico o nosso código podemos usar a Shorthand - Background:
+            color > image > position > repeat > attachment;
+            Assim tem o mesmo resultado com menos conteudo para ser lido.*/
+            height: 100vh;
+            background: black url('imagens-cap19/wallpaper/wallpaper002.jpg') center center no-repeat fixed;
+            background-size: cover;
             
         }
 
         main {
             background-color: white;
-            width: 400px;
+            max-width: 700px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
