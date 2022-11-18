@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+    width: 400px;
+    height: 400px;
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+.cabeça {
+    text-align: center;
+    vertical-align: bottom; 
+    /* aqui esta o comando para alinha verticalmente (  porem no lugar de digitar center, aqui voce coloca middle.*/
+}
