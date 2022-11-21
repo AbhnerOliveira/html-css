@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+table {
+    margin: auto;
+    width: 300px;
+    height: 150px;
+}
+
+td {
+    border: 1px solid black;
+    padding: 1px;
+    text-align: center;
+}
