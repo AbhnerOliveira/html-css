@@ -30,11 +30,22 @@ table {
     border-collapse: collapse;
     background-color: white;
     box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.211);
+    position: relative;
+}
+
+thead > tr > th /* aqui esta um comando que faz como a "o cabeçalho" da tabela acompanhe ela a ate seu final fazendo com que facilite ao leitor a a assimilação dos dados. */{
+    position: sticky;
+    top: 0;
 }
 
 td, th {
     border: 1px solid black;
     padding: 8px;
+    font-weight: bold;
+}
+
+tbody > tr:nth-child(odd) /* aqui esta um exemplo de uma tag para mesclar um tabela, usando nth-child com odd ou even (odd = par, even = impar) */ {
+    background-color: lightgray;
 }
 
 .numero {
@@ -42,12 +53,13 @@ td, th {
 }
 
 .info {
-    background-color: blue;
+    font-weight: bold;
+    background-color: #064420;
     color: white;
 }
 
 #total {
-    background-color: blue;
+    background-color: #064420;
     color: white;
 }
 
