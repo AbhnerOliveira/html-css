@@ -1,0 +1,44 @@
+@charset "UTF8";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-weight: bold;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    margin: auto;
+    width: 200px;
+    height: 100px;
+}
+
+thead tr > th {
+    position: sticky;
+}
+
+th {
+    border: 1px solid black;
+    padding: 3px;
+    text-align: center;
+    background-color: white;
+}
+
+tr:nth-child(odd) {
+    background-color: lightblue;
+}
+
+td {
+    border: 1px solid black;
+    padding: 3px;
+    text-align: center;
+}
+
+#cont {
+    overflow-x: auto;
+}

@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    margin: auto;
+    font-weight: bold;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+table {
+    margin: auto;
+    width: 300px;
+    height: 150px;
+    border-collapse: collapse;
+}
+
+th {
+    color: white;
+    background-color: gray;
+    border: 1px solid black;
+    padding: 1px;
+    text-align: center;
+}
+
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 1px;
+    text-align: center;
+}
+
+.m {
+    background-color: white;
+    color: black;
+}
+
+.f {
+    background-color: gray;
+    color: white;
+}
