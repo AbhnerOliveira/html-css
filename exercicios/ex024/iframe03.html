@@ -10,9 +10,17 @@
             font-family: Arial, Helvetica, sans-serif;
         }
         iframe {
-            width: 95vh;
+            width: 95vw;
             height: 400px;
             border: 2px solid black;
+        }
+        a {
+            color: blue;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color:green;          text-decoration:underline;
         }
     </style>
 </head>
@@ -34,8 +42,10 @@
     <p>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta ut perferendis, ab eaque magni soluta quis architecto quas, voluptatum, eos iure inventore pariatur dolore non excepturi tempore sit labore! Suscipit?
     </p>
-
-    <iframe name="frame" src="" frameborder="0"></iframe>
+<!-- hoje aprendemos a usar srcdoc ao invés do src padrão.... 
+O srcdoc é mais utilizado para deixar algo stático na pagina, assim uma vez que se inicia a navegação ele vai aparecer sempre inicialmente, e ele "some", após o uso de links (neste caso) e somente retornando quando a pagina é inicializada novamente.
+Vale resaltar que esse recurso pode ser uma arquivo separado do próprio html. -->
+    <iframe name="frame" srcdoc="<h1>Escolaha uma das opções acima para começar</h1>" frameborder="0"></iframe>
 
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur nam pariatur itaque cum nihil! Dolor optio beatae suscipit reiciendis inventore nisi temporibus explicabo debitis cupiditate, laudantium impedit neque dolorum tenetur.</p>
 
